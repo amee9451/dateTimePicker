@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Date Time Picker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script language="JavaScript" src="ts_picker_bw.js"></script>
+        <style>
+            .dateDisabled, .dateAllow{
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .dateDisabled{
+                color:#cccccc;
+                cursor: auto
+            }
+            .dateAllow{
+                color:#000000;
+            }
+            .weekdays{
+                background-color: #ffffff !important;
+            }
+            .weekEnd{
+                /*background-color: #DBEAF5 !important;*/
+            }
+            .selectedDate{
+                background-color: #4682B4 !important;
+            }
+            .selectedDate .dateAllow{
+                color:#ffffff !important
+            }
+            .datepicker{
+                width:230px;height:auto;
+                background-color: #fff;
+                border:1px solid #ccc;
+                position: absolute;
+            }
+            .datePickerOutter{
+                position: relative;
+            }
+            .week_days, .header{
+                color:#4c4c4c;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <input id="datepickerInput" type="Text" name="timestamp" value="">
+        <br />
+        <br />
+        <br />
+        <input id="datepickerInput1" type="Text" name="timestamp" value="">
+        <script>
+            $("#datepickerInput").customDateTimePicker();
+            $("#datepickerInput1").customDateTimePicker();
+        </script>
+
+    </body>
+</html>
